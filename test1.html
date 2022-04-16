@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="app">
+        <p id="txt">您好，爱创课堂</p>
+    </div> -->
+
+    <div id="box">
+        您好，爱创课堂
+        <div class="one"></div>
+        <!-- 我是一个注释 -->
+    </div>
+
+    <script>
+    // var app = document.getElementById('app');
+    // console.log(app.nodeType);   // 1----元素节点
+    // console.log(document.nodeType);     //9----文档节点
+    // console.log(app.childNodes);
+
+    var box = document.getElementById('box');
+    // console.log(box.childNodes.length);
+    for (var i = 0; i < box.childNodes.length; i++) {
+        console.log(box.childNodes[i].nodeType);
+        console.log(box.childNodes[i].nodeValue);
+        console.log(box.childNodes[i].nodeName);
+        console.log('--------------------------------------');
+    }
+
+    // function getNodes(dom) {
+    //     var arr = [];
+    //     reg = /^\s*$/;
+    //     for (var i = 0; i < dom.childNodes.length; i++) {
+    //         if (dom.childNodes[i].nodeType === 3) {
+    //             if (!reg.test(dom.childNodes[i].data)) {
+    //                 arr.push(dom.childNodes[i]);
+    //             }
+    //         } else{
+    //             arr.push(dom.childNodes[i]);
+    //         }
+    //     };
+    //     return arr;
+    // };
+    // console.log(getNodes(box));
+    </script>
+</body>
+</html>
