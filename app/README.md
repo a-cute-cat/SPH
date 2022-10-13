@@ -151,5 +151,6 @@
     bug:需要点击2次登录按钮才能登录成功，并且地址栏url出现奇奇怪怪的参数
     原因：from表单的button默认为提交按钮类型，并且提交到action="##"的地址
     解决：删掉from的action="##",阻止按钮默认行为，在点击事件后添加.prevent,如@click.prevent="xxx"
+# test
         
 
