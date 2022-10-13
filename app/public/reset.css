@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    position: relative;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.clearfix {
+    clear: both;
+}
